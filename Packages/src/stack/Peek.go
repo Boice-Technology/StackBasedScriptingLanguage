@@ -2,8 +2,8 @@
 
 package stack
 
-func (s *Stack) Peek() (item, bool) {
-	var top item
+func (s *Stack) Peek() (Item, bool) {
+	var top Item
 	var verdict bool
 	if(s.IsEmpty()){
 		top, verdict = nil, false

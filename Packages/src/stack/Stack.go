@@ -2,9 +2,9 @@
 
 package stack 
 
-type item interface{}
+type Item interface{}
 
 type Stack struct{
-	datastore []item
+	datastore []Item
 	height int64
 }

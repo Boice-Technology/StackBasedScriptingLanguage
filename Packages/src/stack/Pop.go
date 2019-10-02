@@ -2,8 +2,8 @@
 
 package stack
 
-func (s *Stack) Pop() (item, bool)  {
-	var popped item
+func (s *Stack) Pop() (Item, bool)  {
+	var popped Item
 	var verdict bool
 	if(s.IsEmpty()){
 		popped, verdict =  nil, false
