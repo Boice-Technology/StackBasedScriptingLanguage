@@ -1,6 +1,6 @@
 // Removes the top from the main stack and puts onto the top of the alt stack.
 
-package op_code_stack
+package op_codes_stack
 
 import "stack"
 
