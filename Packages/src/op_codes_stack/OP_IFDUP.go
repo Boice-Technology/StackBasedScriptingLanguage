@@ -8,7 +8,7 @@ func OP_IFDUP(mainStack *stack.Stack) bool {
 	var verdict bool
 	var dataItem stack.Item
 	dataItem, verdict = mainStack.Peek()
-	if verdict == true && dataItem != 0 {
+	if verdict && dataItem != 0 {
 		mainStack.Push(dataItem)
 	} else {
 		verdict = false

@@ -8,7 +8,7 @@ func OP_PICK(mainStack *stack.Stack, N int) bool {
 	var verdict bool
 	var dataItem stack.Item
 	dataItem, verdict = mainStack.AtNthToTop(N)
-	if verdict==true {
+	if verdict  {
 		mainStack.Push(dataItem)
 	}
 	return verdict
