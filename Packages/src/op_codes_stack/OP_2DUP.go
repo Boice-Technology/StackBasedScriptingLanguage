@@ -9,7 +9,7 @@ func OP_2DUP(mainStack *stack.Stack) (bool){
 	if !present {
 		return false
 	}
-	dataItem2 := mainStack.AtNthToTop(1)
+	dataItem2,_ := mainStack.AtNthToTop(1)
 	mainStack.Push(dataItem1)
 	mainStack.Push(dataItem2)
 	return true

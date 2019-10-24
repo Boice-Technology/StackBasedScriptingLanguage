@@ -9,8 +9,8 @@ func OP_TUCK(mainStack * stack.Stack) bool {
 	if !present {
 		return false
 	}
-	dataItem2 := mainStack.Pop()
-	dataItem1 := mainStack.Pop()
+	dataItem2,_ := mainStack.Pop()
+	dataItem1,_ := mainStack.Pop()
 	mainStack.Push(dataItem2)
 	mainStack.Push(dataItem1)
 	mainStack.Push(dataItem2)

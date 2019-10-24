@@ -9,7 +9,7 @@ func OP_2OVER(mainStack * stack.Stack) bool {
 	if !present {
 		return false
 	}
-	dataItem2 := mainStack.AtNthToTop(3)
+	dataItem2,_ := mainStack.AtNthToTop(3)
 	mainStack.Push(dataItem1)
 	mainStack.Push(dataItem2)
 	return true

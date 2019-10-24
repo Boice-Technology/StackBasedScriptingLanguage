@@ -9,7 +9,7 @@ func OP_2ROT(mainStack * stack.Stack) bool {
 	if !ok {
 		return false
 	}
-	dataItem2 := mainStack.RemoveNthToTop(5)
+	dataItem2,_ := mainStack.RemoveNthToTop(5)
 	mainStack.Push(dataItem1)
 	mainStack.Push(dataItem2)
 	return true

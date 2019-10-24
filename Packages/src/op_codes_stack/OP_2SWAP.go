@@ -9,7 +9,7 @@ func OP_2SWAP(mainStack * stack.Stack) bool {
 	if !ok {
 		return false
 	}
-	dataItem2 := mainStack.RemoveNthToTop(3)
+	dataItem2,_ := mainStack.RemoveNthToTop(3)
 	mainStack.Push(dataItem1)
 	mainStack.Push(dataItem2)
 	return true

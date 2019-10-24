@@ -9,7 +9,7 @@ func OP_2DROP(mainStack *stack.Stack) bool {
 	if !ok {
 		return false
 	}
-	_, ok := mainStack.Pop()
+	_, ok = mainStack.Pop()
 	if !ok {
 		mainStack.Push(d)
 		return false
