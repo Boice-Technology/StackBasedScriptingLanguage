@@ -13,7 +13,7 @@ func (s *Stack) RemoveNthToTop(N int) (Item, bool) {
 		dataItem = s.datastore[int(s.height) - N]
 		temp := s.datastore[int(s.height) - N + 1:]
 		s.datastore = s.datastore[:int(s.height) - N]
-		s.datastore = append(s.datastore, temp)
+		s.datastore = append(s.datastore, temp...)
 		s.height -= 1
 	}
 	return dataItem, verdict

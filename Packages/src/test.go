@@ -1,10 +1,10 @@
 package main
 
 import ("fmt";
-		"stack";
 		)
-
+		
 func main(){
-	var s stack.Stack
-	s.InitialiseStack(1,2,"Divy")
+	var a interface{} = 1
+	fmt.Printf("%T %v\n",a,a)
+	fmt.Println(a.(int)+2)
 }

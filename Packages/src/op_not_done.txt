@@ -1,0 +1,19 @@
+Operations not done : 
+	Arithmetic:
+		Disabled
+		OP_NUMEQUALVERIFY
+	Constants:
+		N/A
+		OP_PUSHDATA1
+		OP_PUSHDATA2
+		OP_PUSHDATA4
+		OP_2 - OP_16
+	
+	Flow control:
+		Everything except OP_NOP
+	Splice:
+		Disabled
+	Bitwise logic:
+		Disabled
+		OP_EQUALVERIFY
+	
